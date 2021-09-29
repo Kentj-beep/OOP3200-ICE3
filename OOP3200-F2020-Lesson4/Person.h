@@ -18,7 +18,7 @@ public:
  * @param age
  */
 Person(std::string first_name, std::string last_name, float age);
-    
+
 float getAge() const;
     
 /**

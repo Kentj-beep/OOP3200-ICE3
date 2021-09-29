@@ -8,6 +8,7 @@
  *
  */
 #include <iostream>
+#include <vector>
 
 #include "Person.h"
 #include "Professor.h"
@@ -15,6 +16,7 @@
 
 int main()
 {
+    // Person is abstract, can't instantiate 
     Person person = Person("Jane", "Dough", 22);
     person.SaysHello();
 
@@ -31,5 +33,19 @@ int main()
     professor.Teaches();
 
     std::cout << professor.ToString() << std::endl;
+
+    // Dynamic Memory Allocation with Objects
+
+    std::vector<Person*> people;
+
+    people.push_back(new Professor("Juan", "Life", 34, "xq3tv0lmno"));
+
+    people[0]->SaysHello();
+
+    std::cout << people[0]->ToString() << std::endl;
+
+    people.push_back(new Student("Mike", "Road", 19, "L313787954"));
+    people[1]->SaysHello();
+    // people[1]->Studies();
 }
 
