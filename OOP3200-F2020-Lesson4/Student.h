@@ -22,18 +22,19 @@ public:
  * @param age
  * @param student_id
  */
-void Student(std::string first_name, std::string last_name, float age, std::string student_id);
+Student(const std::string& first_name, const std::string& last_name, float age, std::string student_id);
     
-std::string getStudentID();
+std::string getStudentID() const;
     
 /**
  * @param value
  */
-void setStudentID(std::string value);
+void setStudentID(const std::string& value);
     
-void Studies();
+void Studies() const;
     
-std::string ToString();
+std::string ToString() override;
+
 private: 
     std::string m_studentID;
 };
