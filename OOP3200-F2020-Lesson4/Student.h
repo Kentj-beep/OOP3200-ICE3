@@ -8,6 +8,8 @@
 #ifndef _STUDENT_H
 #define _STUDENT_H
 
+#include <string>
+
 #include "Person.h"
 
 
@@ -20,20 +22,20 @@ public:
  * @param age
  * @param student_id
  */
-void Student(string first_name, string last_name, float age, string student_id);
+void Student(std::string first_name, std::string last_name, float age, std::string student_id);
     
-string getStudentID();
+std::string getStudentID();
     
 /**
  * @param value
  */
-void setStudentID(string value);
+void setStudentID(std::string value);
     
 void Studies();
     
-string ToString();
+std::string ToString();
 private: 
-    string m_studentID;
+    std::string m_studentID;
 };
 
 #endif //_STUDENT_H

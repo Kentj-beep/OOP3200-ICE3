@@ -17,32 +17,33 @@ public:
  * @param last_name
  * @param age
  */
-void Person(std::string first_name, std::string last_name, float age);
+Person(std::string first_name, std::string last_name, float age);
     
-float getAge();
+float getAge() const;
     
 /**
  * @param value
  */
 void setAge(float value);
     
-std::string getFirstName();
+std::string getFirstName() const;
     
 /**
  * @param value
  */
-void setFirstName(std::string value);
+void setFirstName(const std::string& value);
     
-std::string getLastName();
+std::string getLastName() const;
     
 /**
  * @param value
  */
-void setLastName(std::string value);
+void setLastName(const std::string& value);
     
-void SaysHello();
+void SaysHello() const;
     
-std::string ToString();
+virtual std::string ToString();
+
 private: 
     float m_age;
     std::string m_firstName;

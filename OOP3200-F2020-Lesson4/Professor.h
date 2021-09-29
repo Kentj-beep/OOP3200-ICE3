@@ -8,6 +8,8 @@
 #ifndef _PROFESSOR_H
 #define _PROFESSOR_H
 
+#include <string>
+
 #include "Person.h"
 
 
@@ -20,20 +22,20 @@ public:
  * @param age
  * @param employee_id
  */
-void Professor(string first_name, string last_name, float age, string employee_id);
+void Professor(std::string first_name, std::string last_name, float age, std::string employee_id);
     
-string getEmployeeID();
+std::string getEmployeeID();
     
 /**
  * @param value
  */
-void setEmployeeID(string value);
+void setEmployeeID(std::string value);
     
 void Teaches();
     
-string ToString();
+std::string ToString();
 private: 
-    string m_employeeID;
+    std::string m_employeeID;
 };
 
 #endif //_PROFESSOR_H

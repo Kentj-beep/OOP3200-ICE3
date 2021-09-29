@@ -18,21 +18,21 @@
  * @param age
  * @param student_id
  */
-void Student::Student(string first_name, string last_name, float age, string student_id) {
+void Student::Student(std::string first_name, std::string last_name, float age, std::string student_id) {
 
 }
 
 /**
- * @return string
+ * @return std::string
  */
-string Student::getStudentID() {
+std::string Student::getStudentID() {
     return "";
 }
 
 /**
  * @param value
  */
-void Student::setStudentID(string value) {
+void Student::setStudentID(std::string value) {
 
 }
 
@@ -44,8 +44,8 @@ void Student::Studies() {
 }
 
 /**
- * @return string
+ * @return std::string
  */
-string Student::ToString() {
+std::string Student::ToString() {
     return "";
 }
